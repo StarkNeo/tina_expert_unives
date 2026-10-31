@@ -1,0 +1,5 @@
+venv/
+salida_tina.rdf
+.env
+__pycache__/
+*.pyc

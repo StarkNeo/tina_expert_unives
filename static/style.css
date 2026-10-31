@@ -1,0 +1,53 @@
+body {
+    background:linear-gradient(135deg, #dbeafe, #ffffff);
+    min-height: 100vh;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+}
+
+.tank {
+    width: 220px;
+    height: 420px;
+    margin: auto;
+    border: 8px solid #1e293b;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background:linear-gradient(180deg, #60a5fa, #2563eb);
+    transition: all .6s ease;
+}
+
+.water::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 25px;
+    left: 0;
+    top: -10px;
+    background:rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    animation: wave 4s linear infinite;
+}
+
+
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
